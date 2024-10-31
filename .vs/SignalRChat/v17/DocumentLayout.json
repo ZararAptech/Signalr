@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|c:\\users\\eshop\\source\\repos\\signalrchat\\signalrchat\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B9314ABB-C3FE-4144-B890-B04C50F793DB}|SignalRChat\\SignalRChat.csproj|solutionrelative:signalrchat\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 245,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "SignalRChat\\Views\\Client\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "SignalRChat\\Views\\Client\\Index.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAALEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T11:00:27.051Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Program.cs",
+              "RelativeDocumentMoniker": "SignalRChat\\Program.cs",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Program.cs",
+              "RelativeToolTip": "SignalRChat\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T05:25:04.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SignalRChat\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SignalRChat\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAAABYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T10:38:48.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Data\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "SignalRChat\\Data\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Data\\MyDbContext.cs",
+              "RelativeToolTip": "SignalRChat\\Data\\MyDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T08:28:30.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SignalRChat\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SignalRChat\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T04:31:35.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\ChatHub.cs",
+              "RelativeDocumentMoniker": "SignalRChat\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\ChatHub.cs",
+              "RelativeToolTip": "SignalRChat\\ChatHub.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAC0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T05:10:07.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "SignalRChat\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "SignalRChat\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T09:23:10.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "SignalRChat\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\ESHOP\\source\\repos\\SignalRChat\\SignalRChat\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "SignalRChat\\Controllers\\ClientController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T05:18:59.522Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+﻿@model IEnumerable<SignalRChat.Models.usermsghistory>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignalR Specific Client</title>
+    <style>
+        #error, #messageError {
+            color: red;
+            display: none;
+        }
+
+        textarea {
+            width: 300px;
+        }
+
+        .status {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>SignalR - Send Message to Specific Client or All Clients</h2>
+
+    
+    <input type="text" class="form-control" id="connectionIdInput" placeholder="Enter User ID" />
+    <div id="error">Please enter a valid user ID.</div>
+
+    <br />
+    <textarea id="messageInput" class="form-control" rows="5" placeholder="Enter Message"></textarea>
+    <div id="messageError" style="display: none; color: red;">Please enter a message.</div>
+
+    <br />
+    <button onclick="sendMessageToSpecific()" class="btn btn-primary">Send to Specific Client</button>
+    <button onclick="sendMessage()" class="btn btn-primary">Send to All Clients</button>
+@*     <button onclick="updateId()" class="btn btn-primary">Update ConnectionID</button>
+ *@
+
+    <h3>Messages:</h3>
+    <div id="messagesList"></div>
+    <div id="connectionStatus" class="status"></div>
+
+
+    <hr />
+    
+  
+   <h1>Message History</h1>
+  <div class="row">
+      <div class="col-lg-6">
+            <table class="table table-bordered table-striped shadow table-hover">
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.msghistory</td>
+                        <td>
+                            <form asp-action="DeleteMessage" method="post">
+                                <input type="hidden" name="id" value="@item.id" />
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+
+
+                }
+
+            </table>
+      </div>
+  </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.11/signalr.min.js"></script>
+
+    <script>
+        const connection = new signalR.HubConnectionBuilder().withUrl("/chat").build();
+        let isConnected = false;
+
+        connection.start()
+            .then(function () {
+                console.log("Connected to SignalR!");
+                sessionStorage.setItem('connectionId', connection.connectionId);
+                console.log("Connection id:", connection.connectionId)
+               
+
+                console.log("Connection id from session:", sessionStorage.getItem('connectionId', connection.connectionId))
+
+                
+                const connectionId = connection.connectionId;
+
+                // const hiddenInput = document.getElementById("connectionIdHidden");
+                // if (hiddenInput) {
+                //     hiddenInput.value = connectionId;
+                // }
+
+               
+                isConnected = true;
+                document.getElementById("connectionStatus").textContent = "Connected to SignalR.";
+                getUserId();
+            })
+            .catch(function (err) {
+                console.error("Error connecting to SignalR:", err);
+                document.getElementById("connectionStatus").textContent = "Failed to connect to SignalR.";
+            });
+
+
+            
+        
+       
+
+        connection.on("ReceiveMessage", function (message) {
+            const messageDiv = document.createElement("div");
+            messageDiv.textContent = message;
+            document.getElementById("messagesList").appendChild(messageDiv);
+        });
+
+        function sendMessageToSpecific() {
+            if (!isConnected) {
+                console.error("Cannot send message. Not connected to SignalR.");
+                return;
+            }
+
+            const userId = document.getElementById("connectionIdInput").value;
+            const message = document.getElementById("messageInput").value;
+            const errorDiv = document.getElementById("error");
+            const messageErrorDiv = document.getElementById("messageError");
+
+            errorDiv.style.display = "none";
+            messageErrorDiv.style.display = "none";
+
+            if (userId === "" && message.trim() === "") {
+                errorDiv.style.display = "block";
+                messageErrorDiv.style.display = "block";
+            } else if (userId === "") {
+                errorDiv.style.display = "block";
+            } else if (message.trim() === "") {
+                messageErrorDiv.style.display = "block";
+            } else {
+                connection.invoke("SendMessageToSpecificClient", userId, message)
+                    .then(() => {
+                        console.log("Message sent successfully to the specific client.");
+                        alert("Message sent successfully to the specific client.");
+                    })
+                    .catch(function (err) {
+
+                            console.error("Error: User ID does not exist.");
+                            alert("Error: User ID does not exist.");
+                            console.error("Error sending message to specific client:", err.toString());
+                        
+                    });
+            }
+        }
+
+        function sendMessage() {
+            if (!isConnected) {
+                console.error("Cannot send message. Not connected to SignalR.");
+                return;
+            }
+
+            const message = document.getElementById("messageInput").value;
+            const messageErrorDiv = document.getElementById("messageError");
+
+            if (message.trim() === "") {
+                messageErrorDiv.style.display = "block";
+            } else {
+                messageErrorDiv.style.display = "none";
+                connection.invoke("SendMessage", message)
+                    .then(() => {
+                        console.log("Message sent successfully to all clients.");
+                        alert("Message sent successfully to all clients.");
+                        // clearInputs();
+                    })
+                    .catch(function (err) {
+                        console.error("Error sending message to all clients:", err.toString());
+                    });
+            }
+        };
+
+
+
+        let userId = getUserId();
+       
+      
+        
+        function getUserId() {
+            // updateid();
+            fetch('/Home/GetUserId')
+                .then(response => response.json())
+                .then(data => {
+                    userId = data.userId;
+                    console.log("User ID:", data.userId);
+                    console.log("User ID:", sessionStorage.getItem('connectionId', connection.connectionId));
+                    connection.invoke("UpdateConnectionId", userId, sessionStorage.getItem('connectionId', connection.connectionId));
+                });
+              
+        };
+
+
+
+   
+        
+
+      
+
+
+
+
+    
+    </script>
+</body>
+</html>
